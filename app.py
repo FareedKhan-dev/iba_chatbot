@@ -1,17 +1,11 @@
 from flask import Flask, render_template, request
 import config
-import openai
 import aiapi
 import pandas as pd
 import numpy as np
-import openai
-from openai.embeddings_utils import get_embedding
+# from openai.embeddings_utils import get_embedding
 from sklearn.metrics.pairwise import cosine_similarity
 
-
-COMPLETIONS_MODEL = "text-davinci-003"
-EMBEDDINGS_MODEL = "text-embedding-ada-002"
-openai.api_key = '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'
 import gzip
 
 with gzip.open('vectorized_data.npy.gz', 'rb') as f:
