@@ -7,12 +7,11 @@ import numpy as np
 import openai
 from openai.embeddings_utils import get_embedding
 from sklearn.metrics.pairwise import cosine_similarity
-import os
 
 
 COMPLETIONS_MODEL = "text-davinci-003"
-# EMBEDDINGS_MODEL = "text-embedding-ada-002"
-openai.api_key = os.getenv('my_api_key')
+EMBEDDINGS_MODEL = "text-embedding-ada-002"
+openai.api_key = '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'
 import gzip
 
 with gzip.open('vectorized_data.npy.gz', 'rb') as f:
