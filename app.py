@@ -44,7 +44,7 @@ def index():
     information_this = ' '.join(data_array[1][sorted_indices[0:2]])
     # cosinesimilarity_this = similarity[sorted_indices[0]]
 
-    prompt = f""" Answer only IBA related question using only the context below. If someone asked about your information reply to them exact text "I am an IBA CHATBOT, who solve your queries", Answer it in professional way, if you are not able to answer the question make sure you don't give any wrong information
+    prompt = f""" Answer the following question using only the context below. Answer it in professional way, if you are not able to answer the question from the below context try to use your own knowledge
 
     Context:
     {information_this}
