@@ -6,7 +6,7 @@ from openai.embeddings_utils import get_embedding
 from sklearn.metrics.pairwise import cosine_similarity
 
 import gzip
-COMPLETIONS_MODEL = "text-davinci-003"
+COMPLETIONS_MODEL = "text-davinci-002"
 openai.api_key = os.getenv('my_new_api_key_here')
 
 
